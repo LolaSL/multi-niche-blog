@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.app {
+  display: flex;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+/* .container {
+  width: 1024px;
+} */
+/* Login & Registration */
+
+h1 {
+  font-size: 20px;
+  color: teal;
+  margin-bottom: 20px;
+}
+.small-container {
+  max-width: 600px;
+}
+.btn {
+  background-color: rgb(56, 144, 162);
+  font-weight: bold;
+  color: white;
+}
+.btn:hover {
+  background-color: teal;
+  font-weight: bold;
+}
+
+/* Navbar */
+.logo-image {
+  background-color: rgb(237, 203, 233);
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.navbar{
+  padding: 10px 0;
+  justify-content: space-between;
+  width: 1124px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.create {
+  background-color: teal;
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: 1px solid white;
+  color: white;
+}
+.create:hover {
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+  font-weight: 600;
+}
+
