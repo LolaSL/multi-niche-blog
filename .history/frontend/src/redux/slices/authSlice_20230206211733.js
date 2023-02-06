@@ -1,0 +1,38 @@
+import { createSlice } from '@reduxjs/toolkit';
+
+const userAuthFromLocalStorage = () => {
+  const isAuth = localStorage.getItem('userInfo')
+  ? JSON.parse(localStorage.getItem('userInfo'))
+  : null
+
+  if (isAuth && JSON.parse(isAuth) ) {
+    return isAuth.data
+
+  }
+
+  return false;
+}
+
+
+const initialState = {
+  isAuth: userAuthFromLocalStorage(),
+
+};
+
+export const authSlice = createSlice({
+  name: 'auth',
+  isAuth,
+    initialState,
+    reducers: {
+        authenticateUser: (state, payload) => {
+        state.isAuth = isAuth.data
+        },
+        unauthenticateUser: (state) => {
+          state.isAuth = false;
+      },
+    },
+});
+
+export const { authenticateUser, unauthenticateUser} = authSlice.actions;
+
+export default authSlice.reducer;
